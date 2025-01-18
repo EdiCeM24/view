@@ -46,3 +46,22 @@ const closeNav = () => {
 
 closeBtn.addEventListener('click', closeNav);
 //** ===== HIDE MENU ON CLICK OUTSIDE ===== **/
+
+
+
+//** ===== HIRE ME BUTTON SECTION ===== **/
+function myFunc() {
+    window.location.href = './pages/contact.html';
+}
+
+
+//** ===== DOWNLOAD BUTTON SECTION ===== **/
+function download() {
+    const image = "./images/best_resumes.pdf";
+    const link = document.createElement('a');
+    link.href = image;
+    link.download = document.body.appendChild(link);
+    link.click(link);
+    document.body.removeChild(link);
+}
+

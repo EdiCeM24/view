@@ -433,15 +433,25 @@ footer {
     .content-body {
         margin-top: 60%;
     }
+    .content-body h3 {
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+    .content-body span {
+        font-size: 3rem;
+    }
     /** ===== DETAILS SECTION ===== **/
     .my-details p {
-        padding: 0rem;
-        margin-left: 10%;
+        padding: 0rem 1rem;
+        text-align: justify;
+        margin: 1rem;
+        margin-right: -2rem;
     }
     .hire-point {
         width: 90%;
         height: 90%;
         margin-left: 3rem;
+        margin-top: 1rem;
     }
     .pictorial-image {
         display: grid;
@@ -479,7 +489,7 @@ footer {
     }
     /** ===== TESTIMONIAL SECTION ===== **/
     .testimonies {
-        margin-left: 15%;
+        margin-left: 17%;
     }
     .testimonies h2 {
         margin-top: 5rem;
@@ -512,39 +522,37 @@ footer {
 @media screen and (min-width: 768px) {
     /** ===== HEADER SECTION ===== **/
     .nav-section {
-        min-height: 3rem;
-        margin-bottom: 2rem;
-        margin-top: 3%;
+        /* min-height: 3rem; */
+        margin-bottom: 1rem;
+        margin-top: -3%;
     }
     .about-header {
-        display: grid;
-        margin-top: 4rem;
-        min-height: 2rem;
+        display: flex;
+        margin-top: 13rem;
+        min-height: 2rem; 
+        align-items: center;
     }
     .brand {
         margin-left: -0%;
-        margin-top: 1rem;
-    }
-    .nav-lines {
-        display: inline-block;
-        padding-block: 2rem;
         margin-top: -4rem;
-        line-height: 2;
     }
     .nav-lines a {
-        gap: 1rem;
-        padding: 0rem 2rem;
+        gap: 0.5rem;
+        padding: 0rem 1rem;
     }
     .socials-links {
-        padding: 6rem;
+        padding: -1rem;
     }
     .content-body {
-        margin-top: 40%;
+        margin-top: 20%;
+        margin-bottom: 2rem;
     }
     /** ===== DETAILS SECTION ===== **/
     .my-details p {
-        padding: 0rem;
-        margin-left: 10%;
+        padding: 0rem 1rem;
+        text-align: justify;
+        margin: 1rem;
+        margin-right: -2rem;
     }
     .hire-point {
         width: 90%;
@@ -563,15 +571,20 @@ footer {
         justify-content: center;
     }
     .photo-graph img {
-        margin-left: 4% !important;
-        width: 70vh;
+        display: grid;
+        align-items: center;
+        margin-left: 18% !important;
+        width: 50vh;
         margin-bottom: 2rem;
     }
     .birth-details {
         display: grid;
         align-items: center;
         justify-content: center;
-        margin-left: -20%;
+        margin-left: -15%;
+    }
+    .lancer p {
+        margin-left: -2rem;
     }
     .lancer a {
         cursor: pointer;
@@ -607,7 +620,7 @@ footer {
     }
     /** ===== TESTIMONIAL SECTION ===== **/
     .testimonies {
-        margin-left: 10%;
+        margin-left: 12%;
     }
     .testimonies h2 {
         margin-top: 5rem;
@@ -647,7 +660,7 @@ footer {
     .nav-section {
         min-height: 0rem;
         margin-bottom: 0rem;
-        margin-top: 3%;
+        margin-top: 4%;
     }
     .about-header {
         display: flex;
@@ -673,7 +686,7 @@ footer {
         margin-top: 10%;
     }
     .socials-links {
-        margin-top: -10rem;
+        margin-top: -8rem;
     }
     /** ===== DETAILS SECTION ===== **/
     .my-details p {
@@ -684,6 +697,7 @@ footer {
         width: 90%;
         height: 90%;
         margin-left: 3rem;
+        margin-top: 2%;
     }
     .pictorial-image {
         display: flex;
@@ -700,12 +714,13 @@ footer {
     }
     .about-content h2 {
         margin-left: -32%;
+        font-size: 2.5rem;
     }
     .birth-details .bith-list {
         margin-left: -10%;
     }
     .text-pics {
-        margin-left: -32%;
+        margin-left: -25%;
     }
     .photo-graph img {
         margin-top: -15vh;
@@ -715,7 +730,7 @@ footer {
     }
     .lancer a {
         cursor: pointer;
-        margin-left: -47%;
+        margin-left: -35%;
     }
     .cv-btn {
         width: 80%;
@@ -737,7 +752,7 @@ footer {
     }
     /** ===== TESTIMONIAL SECTION ===== **/
     .testimonies {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .testimonies h2 {
         margin-top: 5rem;
@@ -762,6 +777,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 10%;
+        margin-left: 20%;
     }
 }
