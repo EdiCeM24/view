@@ -1,31 +1,80 @@
-.contact-container {
-    height: 100%;
-    width: 100vw;
-    position: relative;
-    top: 0;
+
+.window-scroll {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-transition);
 }
-.about-header {
-    margin-top: -5%;
-}
-.nav-contact {
-    display: grid;
+/** ===== HEADER SECTION ===== **/
+#header {
+    display: flex;
     align-items: center;
-    justify-items: space-between;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 15%;
+    top: 0;
     position: fixed;
-    left: 0;
-    top: -15%;
-    z-index: 1;
     width: 100%;
-    background-color: #203040;
-    padding: 0.8rem;
+    left: 0;
+    z-index: 1;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4px;
+    margin-top: 0%;
+}
+.brand h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: var(--webkit-text-stroke);
+    cursor: pointer;
+    text-shadow: var(--text-shadow);
+}
+.brand h3:hover {
+    color: var(--logo-name);
+    transition: var(--shadow-transition);
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 3rem;
+}
+.header-nav a {
+    text-decoration: none;
+    color: var(--color-kamu);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: var(--text-shadow);
+}
+.header-nav a:hover {
+    color: var(--color-indignant);
+    transition: var(--transition-mark);
 }
 .socials-links {
-    margin-top: 8%;
+    margin-top: 10%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    gap: 2rem;
 }
-.content-body {
-    margin-top: 30%;
+.socials-links a {
+    color: #fff;
+    gap: 2rem;
+    padding: 0rem 1rem;
 }
+.socials-links a:hover {
+    color: wheat;
+    transition: var(--transition-mark);
+}
+
 /** ===== FORM CONTACT SECTION ===== **/
+.content-body {
+    margin-top: -5%;
+}
 .contact {
     display: block;
     align-items: center;
@@ -131,7 +180,7 @@ input {
 /** ===== BREAKPOINTS ===== **/
 
 /** ===== MOBILE PHONE ===== **/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 680px) {
     /** ===== AVAILABLE FOR HIRE POINT ===== **/
     .contact-container {
         top: 0;
@@ -225,43 +274,72 @@ input {
 }
 
 /** ===== TABLETS AND LAPTOP ===== **/
-@media screen and (min-width: 768px) {
-    .about-header {
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .nav-contact {
-        margin-top: 10%;
-    }
-    .content-body {
-        margin-top: 40%;
-        margin-left: 6%;
-    }
-    .content-body h3 {
-        font-size: 3rem;
-    }
-    .content-body span {
-        font-size: 3rem;
-    }
-    .brand {
-        margin-left: 2%;
-        margin-top: 8%;
-    }
-    .nav-lines {
-        display: inline-block;
-        padding-block: 0rem;
-        margin-top: 5rem;
-    }
-    .nav-lines a {
-        gap: 0.5rem;
-        padding: 0rem 1rem;
-    }
-    .socials-links {
-        padding: 0rem;
-        margin-top: -4%;
-    }
+@media screen and (max-width: 880px) {
+    /** ===== HEADER SECTION ===== **/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 15%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+.brand h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: var(--webkit-text-stroke);
+    cursor: pointer;
+    text-shadow: var(--text-shadow);
+}
+.brand h3:hover {
+    color: var(--logo-name);
+    transition: var(--shadow-transition);
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.header-nav a {
+    text-decoration: none;
+    color: var(--color-kamu);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: var(--text-shadow);
+}
+.header-nav a:hover {
+    color: var(--color-indignant);
+    transition: var(--transition-mark);
+}
+.socials-links {
+    margin-top: 10%;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    gap: 2rem;
+}
+.socials-links a {
+    color: #fff;
+    gap: 2rem;
+    padding: 0rem 1rem;
+}
+.socials-links a:hover {
+    color: wheat;
+    transition: var(--transition-mark);
+}
     .my-details p {
         padding: 0rem 2rem;
         text-align: justify;
